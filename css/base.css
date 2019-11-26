@@ -1,0 +1,17 @@
+h1 {
+	padding-left: 1em;
+}
+ul ul {
+	padding-left: 0;
+}
+li {
+	padding-left: 1em;
+	text-indent: -1em;
+	list-style: none;
+}
+li:before {
+	content: "・";
+}
+li li:before {
+	content: "└";
+}
