@@ -75,6 +75,7 @@ img{
 	}
 	&_list {
 		display: flex;
+		transition: width .3s;
 		&.active {
 			width: 100%;
 			.toggle_cont {
@@ -94,6 +95,7 @@ img{
 			}
 		}
 		@include media(pc) {
+			width: 67px;
 			&.active {
 				.toggle_cont {
 					padding: 30px 50px;

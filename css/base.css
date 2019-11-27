@@ -53,12 +53,13 @@ img { width: 100%; height: auto; vertical-align: bottom; }
 .menu { display: flex; position: fixed; top: 0; right: 0; z-index: 999; }
 
 .toggle_wrap { width: 100%; display: flex; position: relative; }
-.toggle_list { display: flex; }
+.toggle_list { display: flex; transition: width .3s; }
 .toggle_list.active { width: 100%; }
 .toggle_list.active .toggle_cont { padding: calc(20 / 750 * 100vw); width: 100%; opacity: 1; visibility: visible; display: block; animation-duration: .3s; animation-name: fade-in; }
 .toggle_list.active .toggle_hl-1 { cursor: auto; }
 .toggle_list.active .toggle_hl-1:hover { opacity: 1; }
-@media screen and (min-width: 768px) { .toggle_list.active .toggle_cont { padding: 30px 50px; } }
+@media screen and (min-width: 768px) { .toggle_list { width: 67px; }
+  .toggle_list.active .toggle_cont { padding: 30px 50px; } }
 .toggle_cont { width: 0; height: 100vh; opacity: 0; visibility: hidden; overflow-y: scroll; display: none; transition: width .3s, opacity .3s, visibility .3s; }
 .toggle_cont li li { display: flex; }
 .toggle_cont li li p { display: flex; }
